@@ -1,0 +1,10 @@
+node {
+    stage('scm''){
+        checkout scm
+    }
+    stage('build'){
+        echo 'Building My Cool Application'
+        bat 'dir'
+        echo 'Bad PR test no quote chara here->'
+    }
+}
